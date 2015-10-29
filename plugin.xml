@@ -4,6 +4,7 @@
         version="0.7.0">
 
   <name>Hello</name>
+  <description>Test hello plugin</description>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
