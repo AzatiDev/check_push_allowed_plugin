@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="com.azati.example.hello"
-        version="0.0.2">
+        version="0.0.3">
 
   <name>Hello</name>
   <description>Test hello plugin</description>
@@ -11,7 +11,7 @@
   </engines>
 
   <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+    <clobbers target="navigator.push_status" />
   </js-module>
 
   <platform name="android">
