@@ -1,44 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.azati.example.hello"
-        version="0.0.3">
+        id="com.azati.push_status"
+        version="0.0.1">
 
-  <name>Hello</name>
-  <description>Test hello plugin</description>
+  <name>IOS Push notifications availability status</name>
+  <description>This plugin identifires status of availability application push notifications</description>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <js-module src="www/hello.js" name="hello">
+  <js-module src="www/push_status.js" name="push_status">
     <clobbers target="navigator.push_status" />
   </js-module>
 
-  <platform name="android">
-
-    <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Hello">
-        <param name="android-package" value="com.example.plugin.Hello"/>
+  <platform name="ios">    
+    <config-file target="config.xml" parent="/*">
+      <feature name="PushStatus">
+        <param name="ios-package" value="PushStatus" />
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
-  </platform>
-
-  <platform name="ios">
-    
-    <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
-  </platform>
-
-  <platform name="wp7">
-    <source-file src="src/wp7/Hello.cs"/>
+    <header-file src="src/ios/PushStatus.h"/>
+    <source-file src="src/ios/PushStatus.m"/>
   </platform>
 
 </plugin>

@@ -1,6 +1,6 @@
-#import "HWPHello.h"
+#import "PushStatus.h"
 
-@implementation HWPHello
+@implementation PushStatus
 
 - (void)greet:(CDVInvokedUrlCommand*)command
 {
