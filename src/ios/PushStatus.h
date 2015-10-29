@@ -2,6 +2,6 @@
 
 @interface PushStatus : CDVPlugin
 
-- (void) isPushNotificationsAvailabale:(CDVInvokedUrlCommand*)command;
+- (void) isPushNotificationsAvailable:(CDVInvokedUrlCommand*)command;
 
 @end

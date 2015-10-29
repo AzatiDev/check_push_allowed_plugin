@@ -2,7 +2,7 @@
 
 @implementation PushStatus
 
-- (void)isPushNotificationsAvailabale:(CDVInvokedUrlCommand*)command
+- (void)isPushNotificationsAvailable:(CDVInvokedUrlCommand*)command
 {
 	UIApplication *application = [UIApplication sharedApplication];
 	CDVPluginResult* pluginResult = nil;
