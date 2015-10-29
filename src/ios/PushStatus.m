@@ -30,20 +30,20 @@
 		} else {
 		isEnabled = YES;
 		}
-		NSString* msg = [NSString stringWithFormat: @"first Is Enabled, %@", isEnabled];
+		NSString* msg = [NSString stringWithFormat: @"first Is Enabled, %@", isEnabled ? @"true" : @"false"];
 		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
 	}
 	else if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
 	{
 		isEnabled = [application isRegisteredForRemoteNotifications];
-		NSString* msg = [NSString stringWithFormat: @"second Is Enabled, %@", isEnabled];
+		NSString* msg = [NSString stringWithFormat: @"second Is Enabled, %@", isEnabled ? @"true" : @"false"];
 		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
 	}
 	else if([application respondsToSelector:@selector(enabledRemoteNotificationTypes)])
 	{
 		UIRemoteNotificationType types = [application enabledRemoteNotificationTypes];
 		isEnabled = types & UIRemoteNotificationTypeAlert;
-		NSString* msg = [NSString stringWithFormat: @"third Is Enabled, %@", isEnabled];
+		NSString* msg = [NSString stringWithFormat: @"third Is Enabled, %@", isEnabled ? @"true" : @"false"];
 		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
 	} else {
 		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Such platform is not supported"];
