@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="com.azati.push_status"
-        version="0.0.1">
+        version="0.0.2">
 
   <name>IOS Push notifications availability status</name>
   <description>This plugin identifires status of availability application push notifications</description>
