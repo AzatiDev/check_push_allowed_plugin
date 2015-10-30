@@ -7,7 +7,7 @@ PhoneGap Build
 --------------
 To include the PushStatus plugin in your PhoneGap Build application, add this to your config.xml:
 
-    <gap:plugin name="push_status" source="npm" version="0.0.5" />
+    <gap:plugin name="push_status" source="npm" version="0.0.7" />
  
 Methods
 -------
