@@ -5,7 +5,10 @@
 
   <name>IOS Push notifications availability status plugin</name>
   <description>This plugin help you to check if push notifications is disabled in phone settings</description>
+  <author>Azati</author>
 
+  <license>MIT</license>
+  
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
