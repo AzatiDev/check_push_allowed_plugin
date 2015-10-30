@@ -2,7 +2,7 @@
     "name": "push_status",
     "description": "This plugin help you to check if push notifications is disabled in phone settings",
 	"author": "Azati",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "homepage": "https://github.com/AzatiMob/check_push_allowed_plugin#readme",
     "repository": {
         "type": "git",

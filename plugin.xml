@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         id="com.azati.push_status"
-        version="0.0.7">
+        version="0.0.8">
 
   <name>IOS Push notifications availability status plugin</name>
   <description>This plugin help you to check if push notifications is disabled in phone settings</description>
