@@ -3,8 +3,8 @@
         id="com.azati.push_status"
         version="0.0.5">
 
-  <name>IOS Push notifications availability status</name>
-  <description>This plugin identifires status of availability application push notifications</description>
+  <name>IOS Push notifications availability status plugin</name>
+  <description>This plugin help you to check if push notifications is disabled in phone settings</description>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
